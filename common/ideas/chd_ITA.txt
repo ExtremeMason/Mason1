@@ -1,0 +1,154 @@
+ideas = {
+	country = {
+		ITA_controlled_homeland_and_colonies = {
+			picture = italy_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				power_balance_weekly = 0.001
+			}
+			removal_cost = -1
+		}
+		ITA_controlled_homeland = {
+			picture = italy_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.025
+			}
+		}
+		ITA_partly_controlled_homeland = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.05
+				power_balance_weekly = -0.001
+			}
+		}
+		ITA_low_controlled_homeland = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				power_balance_weekly = -0.002
+			}
+		}
+		Africa_factor = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		Africa_factor_2 = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+		        line_change_production_efficiency_factor = 0.1
+		        production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1				
+			}
+		}		
+		Africa_non_factor = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.11
+		        line_change_production_efficiency_factor = -0.075
+		        production_factory_start_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+	            war_support = -0.2
+		        stability = -0.2				
+				
+				
+			}
+			
+		}
+		
+			Ital_Balance = {
+			picture = ita_lack_of_control
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				naval_critical_score_chance_factor = 0.3
+				naval_retreat_chance = -0.3
+				navy_weather_penalty = -0.3
+				naval_retreat_speed = -0.3
+				naval_torpedo_hit_chance_factor = 0.3
+				naval_hit_chance = 0.3
+				screening_without_screens = 0.3
+         				
+				
+				
+				
+				
+			}
+			
+		}	
+	}
+}
