@@ -1,0 +1,26 @@
+name: Уведомление в Discord
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отправка в Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{
+                 "content": "✅ Новый пуш в ветку main!",
+                 "embeds": [
+                   {
+                     "title": "Кто-то пушнул!",
+                     "description": "Посмотри, что нового 👀",
+                     "color": 65280
+                   }
+                 ]
+               }' \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
